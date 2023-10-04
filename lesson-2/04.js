@@ -48,8 +48,9 @@ function moreUsers1() {
       weight: 80,
     },
   };
-  let copyPrep = { ...prep, IsMarried: true };
+  let copyPrep = { ...prep, IsMarried: true, sizes: { ...prep.sizes } };
   console.log(prep);
+  copyPrep.sizes.weight = 85;
   console.log(copyPrep);
 }
 moreUsers1();
